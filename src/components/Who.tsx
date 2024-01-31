@@ -1,42 +1,60 @@
 import { FC } from "react";
-
+import Moi from "../Images/Moi.jpg"
+import { AiOutlineMail } from 'react-icons/ai'
+import { BsTelephoneForward } from 'react-icons/bs'
+import { SlSocialLinkedin } from 'react-icons/sl'
+import { RxGithubLogo } from 'react-icons/rx'
+import { FiFacebook } from 'react-icons/fi'
+import { CiFacebook } from 'react-icons/ci'
+import { BsFacebook } from 'react-icons/bs'
+import { FaGithub } from 'react-icons/fa'
+import { BsInstagram } from 'react-icons/bs'
+import { SiGmail } from 'react-icons/si'
+import { CiLinkedin } from 'react-icons/ci'/* 
+import "./About.css" */
 const Who: FC = () => {
   return (
-    <div
-      id="who"
-      className="flex gap-[5vw] px-[5vw] lg:px-[15vw] z-[2] lg:min-h-[70vh] items-center justify-center flex-col md:flex-row"
-    >
-      <img
-        data-scroll
-        data-scroll-speed="2"
-        className="w-[225px] h-[225px] rounded-full"
-        src="/avatar.jpg"
-        alt=""
-      />
-      <div>
-        <h1 data-scroll data-scroll-speed="0.5" className="title text-[40px]">
-          Who am I?
-        </h1>
+    <div id="About" className="h-screen">
+      <h1 className="text-[#285F67] items-center justify-center flex-col text-center text-4xl md:text-6xl sm:text-5xl font-bold mb-5">About me</h1>
+      <div className="containerAbout transition-[0.5s] bg-[rgba(0,15,33,0.5)] relative flex text-center justify-center items-center  ml-[15%] mr-[15%] w-3/4 h-[380px] sm:w-3/4 sm:h-[420px] md:w-[1000px] md:h-[470px]">
+        <div class="lines absolute inset-0 bg-black overflow-hidden before:absolute before:top-1/4 before:left-1/4 before:w-[500px] before:h-[60px] md:before:top-2/4 md:before:left-2/4 md:before:w-[1150px] md:before:h-[120px] after:absolute after:inset-[3px] after:bg-[rgb(0,9,19)]">
+        </div>
+        <div className="absolute flex translate-x-[-50%] left-2/4 top-[5%] w-[1050px] h-[500px]">
+          <div className="w-[100px] h-[125px] sm:w-[200px] sm:h-[250px] md:w-[450px] md:h-[500px]">
+            <img src={Moi} className="md:mt-[30px] w-[170px] sm:w-[120px] md:w-[250px] ml-[370px] md:ml-[100px] sm:ml-[305px] rounded-xl border-red-800"/>
+          </div>
 
-        {/* Hide my age :v */}
-        <p data-scroll className="text-lg text-gray-200" id="story">
-          My name is Nguyen Anh Phong. I&apos;m a
-          {false ? ` ${new Date().getFullYear() - 2007} years old` : ""}{" "}
-          frontend developer living in Hanoi, Vietnam. I started learning web
-          development when I was 13. Since then, I have made a lot of projects,
-          from basic HTML pages to complex projects like a React library. I hope
-          to be a great developer and get my dream job in the future. Besides
-          coding, I also like{" "}
-          <a
-            className="underline underline-offset-2"
-            href="https://blog.napthedev.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            writing blog posts
-          </a>
-          , listening to music and playing video games
-        </p>
+          <div className="md:mt-[40px] sm:mt-[20px] w-1/5 h-[100px] ml-[380px] md:ml-[0px] sm:ml-[280px] md:w-2/4 md:h-[500px] sm:w-1/4 sm:h-[250px] text-justify text-white text-[12px] md:text-[16px] sm:text-[14px]">
+            <h5 className="text-white">Je suis actuellement étudiant L2 Informatique à l'ESTI. Je suis une personne déterminée qui se consacre à ses études et qui travaille dur pour atteindre ses objectifs. Je suis motivé et passionné par les nouvelles technologies, l'informatique et la programmation.</h5>
+            <div className="mt-4 -ml-10 md:ml-0">
+              <div className="flex pt-3"><AiOutlineMail className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
+                <h5 className="mt-[-3px]">tolotraranarison@gmail.com</h5>
+              </div>  
+              <div className="flex pt-3"><BsTelephoneForward className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
+                <h5 className="mt-[-3px]">034 52 211 78</h5>
+              </div>
+              <div className="flex pt-3"><SlSocialLinkedin className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
+                <h5 className="mt-[-1px]">RANARISON Tolotra</h5>
+              </div>
+              <div className="flex pt-3"><RxGithubLogo className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
+                <h5 className="mt-[-3px]">tolotra1S</h5>
+              </div>
+              <div className="flex pt-3"><FiFacebook className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
+                <h5 className="mt-[-3px]">Ranarison tolotras</h5>
+              </div>
+              <div className="flex align-items items-center justify-center mr-20 md:mr-0 sm:mr-28">
+                <ul className="flex mt-9 md:mt-14 sm:mt-7">
+                  <li><a href="https://www.facebook.com/tolotrass" target="_blank"><BsFacebook className="md:w-[50px] md:h-[30px] sm:w-[41px] sm:h-[21px] w-[40px] h-[20px] hover:text-blue-800"/></a></li>
+                  <li><a href="https://www.github/tolotra1S" target="_blank"><FaGithub className="md:w-[50px] md:h-[30px] sm:w-[41px] sm:h-[21px] w-[40px] h-[20px] hover:text-black"/></a></li>
+                  <li><a href="https://www.instagram.com/RNTolotra/?hl=en" target="_blank"><BsInstagram className="md:w-[50px] md:h-[30px] sm:w-[41px] sm:h-[21px] w-[40px] h-[20px] hover:text-pink-600"/></a></li>
+                  <li><a href="https://www.gmail.com/"><SiGmail className="md:w-[50px] md:h-[30px] sm:w-[41px] sm:h-[21px] w-[40px] h-[20px] hover:text-orange-900"/></a></li>
+                  <li><a href="https://www.linkedin.com/in/tolotra-ranarison-402b19268/" target="_blank"><CiLinkedin className="md:w-[50px] md:h-[30px] sm:w-[41px] sm:h-[21px] w-[40px] h-[20px] hover:text-blue-500"/></a></li>
+                
+                </ul>
+              </div> 
+            </div> 
+          </div> 
+        </div>
       </div>
     </div>
   );

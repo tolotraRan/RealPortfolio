@@ -8,6 +8,7 @@ export const characters = [
 
 export const canvasImages = [
   "html",
+  "php",
   "javascript",
   "css",
   "react",
