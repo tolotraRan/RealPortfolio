@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Moi from "../Images/Moi.jpg"
+import Image from 'next/image';
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsTelephoneForward } from 'react-icons/bs'
 import { SlSocialLinkedin } from 'react-icons/sl'
@@ -10,18 +10,15 @@ import { BsFacebook } from 'react-icons/bs'
 import { FaGithub } from 'react-icons/fa'
 import { BsInstagram } from 'react-icons/bs'
 import { SiGmail } from 'react-icons/si'
-import { CiLinkedin } from 'react-icons/ci'/* 
-import "./About.css" */
+import { CiLinkedin } from 'react-icons/ci'
 const Who: FC = () => {
   return (
     <div id="About" className="h-screen">
       <h1 className="text-[#285F67] items-center justify-center flex-col text-center text-4xl md:text-6xl sm:text-5xl font-bold mb-5">About me</h1>
-      <div className="containerAbout transition-[0.5s] bg-[rgba(0,15,33,0.5)] relative flex text-center justify-center items-center  ml-[15%] mr-[15%] w-3/4 h-[380px] sm:w-3/4 sm:h-[420px] md:w-[1000px] md:h-[470px]">
-        <div class="lines absolute inset-0 bg-black overflow-hidden before:absolute before:top-1/4 before:left-1/4 before:w-[500px] before:h-[60px] md:before:top-2/4 md:before:left-2/4 md:before:w-[1150px] md:before:h-[120px] after:absolute after:inset-[3px] after:bg-[rgb(0,9,19)]">
-        </div>
+      <div className="containerAbout transition-[0.5s]  relative flex text-center justify-center items-center  ml-[15%] mr-[15%] w-3/4 h-[380px] sm:w-3/4 sm:h-[420px] md:w-[1000px] md:h-[470px]">
         <div className="absolute flex translate-x-[-50%] left-2/4 top-[5%] w-[1050px] h-[500px]">
           <div className="w-[100px] h-[125px] sm:w-[200px] sm:h-[250px] md:w-[450px] md:h-[500px]">
-            <img src={Moi} className="md:mt-[30px] w-[170px] sm:w-[120px] md:w-[250px] ml-[370px] md:ml-[100px] sm:ml-[305px] rounded-xl border-red-800"/>
+          <Image src="/Images/Moi.png" width={250} height={350} alt="Moi" className="md:mt-[30px] w-[170px] sm:w-[120px] md:w-[250px] ml-[370px] md:ml-[100px] sm:ml-[305px] rounded-xl border-red-800"/>
           </div>
 
           <div className="md:mt-[40px] sm:mt-[20px] w-1/5 h-[100px] ml-[380px] md:ml-[0px] sm:ml-[280px] md:w-2/4 md:h-[500px] sm:w-1/4 sm:h-[250px] text-justify text-white text-[12px] md:text-[16px] sm:text-[14px]">
