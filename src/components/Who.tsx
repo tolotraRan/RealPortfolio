@@ -14,15 +14,18 @@ import { CiLinkedin } from 'react-icons/ci'
 const Who: FC = () => {
   return (
     <div id="About" className="h-screen">
-      <h1 className="text-[#285F67] items-center justify-center flex-col text-center text-4xl md:text-6xl sm:text-5xl font-bold mb-5">About me</h1>
+      <h1 data-scroll data-scroll-speed="0.5" className="title text-[40px] text-center">
+          Who am I?
+        </h1>
       <div className="containerAbout transition-[0.5s]  relative flex text-center justify-center items-center  ml-[15%] mr-[15%] w-3/4 h-[380px] sm:w-3/4 sm:h-[420px] md:w-[1000px] md:h-[470px]">
         <div className="absolute flex translate-x-[-50%] left-2/4 top-[5%] w-[1050px] h-[500px]">
           <div className="w-[100px] h-[125px] sm:w-[200px] sm:h-[250px] md:w-[450px] md:h-[500px]">
-          <Image src="/Images/Moi.png" width={250} height={350} alt="Moi" className="md:mt-[30px] w-[170px] sm:w-[120px] md:w-[250px] ml-[370px] md:ml-[100px] sm:ml-[305px] rounded-xl border-red-800"/>
+          <Image src="/Images/Moi.png"   data-scroll
+        data-scroll-speed="2" width={250} height={350} alt="Moi" className="md:mt-[30px] w-[170px] sm:w-[120px] md:w-[250px] ml-[370px] md:ml-[100px] sm:ml-[305px] rounded-xl border-red-800"/>
           </div>
 
           <div className="md:mt-[40px] sm:mt-[20px] w-1/5 h-[100px] ml-[380px] md:ml-[0px] sm:ml-[280px] md:w-2/4 md:h-[500px] sm:w-1/4 sm:h-[250px] text-justify text-white text-[12px] md:text-[16px] sm:text-[14px]">
-            <h5 className="text-white">Je suis actuellement étudiant L2 Informatique à l'ESTI. Je suis une personne déterminée qui se consacre à ses études et qui travaille dur pour atteindre ses objectifs. Je suis motivé et passionné par les nouvelles technologies, l'informatique et la programmation.</h5>
+            <h5 className="text-white">Je suis actuellement étudiant L3 Informatique à l'ESTI. Je suis une personne déterminée qui se consacre à ses études et qui travaille dur pour atteindre ses objectifs. Je suis motivé et passionné par les nouvelles technologies, l'informatique et la programmation.</h5>
             <div className="mt-4 -ml-10 md:ml-0">
               <div className="flex pt-3"><AiOutlineMail className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
                 <h5 className="mt-[-3px]">tolotraranarison@gmail.com</h5>
