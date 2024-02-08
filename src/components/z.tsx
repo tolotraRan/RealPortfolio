@@ -31,16 +31,16 @@ const Who: FC = () => {
                 <h5 className="mt-[-3px]">tolotraranarison@gmail.com</h5>
               </div>  
               <div className="flex pt-3"><BsTelephoneForward className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
-                <h5 className="mt-[-3px]">034 52 211 78</h5>
+                <h5 className="mt-[-3px]">034 52 211 78 / 032 48 114 49</h5>
               </div>
               <div className="flex pt-3"><SlSocialLinkedin className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
                 <h5 className="mt-[-1px]">RANARISON Tolotra</h5>
               </div>
               <div className="flex pt-3"><RxGithubLogo className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
-                <h5 className="mt-[-3px]">tolotra1S</h5>
+                <h5 className="mt-[-3px]">tolotraRan</h5>
               </div>
               <div className="flex pt-3"><FiFacebook className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
-                <h5 className="mt-[-3px]">Ranarison tolotras</h5>
+                <h5 className="mt-[-3px]">Ranari's tolotra</h5>
               </div>
               <div className="flex align-items items-center justify-center mr-20 md:mr-0 sm:mr-28">
                 <ul className="flex mt-9 md:mt-14 sm:mt-7">

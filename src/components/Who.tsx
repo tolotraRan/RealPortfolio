@@ -12,44 +12,42 @@ import { SiGmail } from 'react-icons/si'
 
 const Who: FC = () => {
   return (
-    <div id="About" className="h-screen">
-      <h1 data-scroll data-scroll-speed="0.5" className="title text-[40px] text-center">
-        Who am I?
-      </h1>
-      <div className="containerAbout transition-[0.5s] relative flex flex-col md:flex-row text-center justify-center items-center w-full md:w-3/4 mx-auto h-[auto]">
-
-        <div className="w-full md:w-[1050px] md:h-[500px] relative flex flex-col md:flex-row">
-          <div className="w-full md:w-[450px] mx-auto md:mr-6">
+    <div id="About" className="h-screen flex justify-center items-center">
+      <div className="text-center">
+        <h1 data-scroll data-scroll-speed="0.5" className="title text-[40px]">
+          Who am I?
+        </h1>
+        <div className="containerAbout transition-[0.5s] relative grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center w-full md:w-3/4 mx-auto">
+          <div className="w-full md:w-[450px] mx-auto">
             <Image src="/Images/Moi.png" data-scroll data-scroll-speed="2" width={250} height={350} alt="Moi" className="mx-auto rounded-xl border-red-800" />
           </div>
-
           <div className="mt-6 text-white text-[12px] md:text-[16px] sm:text-[14px] md:w-2/3 md:text-left">
             <h5 className="text-white">Je suis actuellement étudiant L3 Informatique à l'ESTI. Je suis une personne déterminée qui se consacre à ses études et qui travaille dur pour atteindre ses objectifs. Je suis motivé et passionné par les nouvelles technologies, l'informatique et la programmation.</h5>
             <div className="mt-4">
               <div className="flex items-center justify-center md:justify-start">
-                <AiOutlineMail className="w-[29px] h-[15px] mr-2" />
+                <AiOutlineMail className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]" />
                 <h5>tolotraranarison@gmail.com</h5>
               </div>
               <div className="flex items-center justify-center mt-2 md:justify-start">
-                <BsTelephoneForward className="w-[29px] h-[15px] mr-2" />
-                <h5>034 52 211 78</h5>
+              <BsTelephoneForward className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
+                <h5>034 52 211 78 / 032 48 114 49</h5>
               </div>
               <div className="flex items-center justify-center mt-2 md:justify-start">
-                <SlSocialLinkedin className="w-[29px] h-[15px] mr-2" />
+              <SlSocialLinkedin className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
                 <h5>RANARISON Tolotra</h5>
               </div>
               <div className="flex items-center justify-center mt-2 md:justify-start">
-                <RxGithubLogo className="w-[29px] h-[15px] mr-2" />
-                <h5>tolotra1S</h5>
+              <RxGithubLogo className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
+                <h5>tolotraRan</h5>
               </div>
               <div className="flex items-center justify-center mt-2 md:justify-start">
-                <FiFacebook className="w-[29px] h-[15px] mr-2" />
-                <h5>Ranarison tolotras</h5>
+              <FiFacebook className="w-[29px] h-[15px] pr-[15px] sm:w-[32px] sm:h-[17px] sm:pr-[17px] md:w-[39px] md:h-[20px] md:pr-[20px]"/>
+                <h5>Ranari's tolotra</h5>
               </div>
             </div>
             <div className="mt-6">
               <ul className="flex justify-center">
-                <li className="mx-2">
+              <li className="mx-2">
                   <a href="https://www.facebook.com/tolotrass" target="_blank"><FiFacebook className="w-[40px] h-[20px] hover:text-blue-800" /></a>
                 </li>
                 <li className="mx-2">
@@ -69,10 +67,6 @@ const Who: FC = () => {
           </div>
         </div>
       </div>
-
-      
-
-
     </div>
   );
 };
