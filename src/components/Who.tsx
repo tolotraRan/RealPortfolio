@@ -21,7 +21,7 @@ const Who: FC = () => {
           <div className="w-full md:w-[450px] mx-auto">
             <Image src="/Images/Moi.png" data-scroll data-scroll-speed="2" width={250} height={350} alt="Moi" className="mx-auto rounded-xl border-red-800" />
           </div>
-          <div className="mt-6 text-white text-[12px] md:text-[16px] sm:text-[14px] md:w-2/3 md:text-left">
+          <div className="mt-6 text-white text-[12px] md:text-[16px] sm:text-[14px] md:w-3/3 md:text-left">
             <h5 className="text-white">Je suis actuellement étudiant L3 Informatique à l'ESTI. Je suis une personne déterminée qui se consacre à ses études et qui travaille dur pour atteindre ses objectifs. Je suis motivé et passionné par les nouvelles technologies, l'informatique et la programmation.</h5>
             <div className="mt-4">
               <div className="flex items-center justify-center md:justify-start">
