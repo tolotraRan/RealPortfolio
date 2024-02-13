@@ -1,0 +1,59 @@
+[
+    {
+      "title": "HTML",
+      "image": "html.png"
+    },
+    {
+      "title": "CSS",
+      "image": "css.png"
+    },
+    {
+      "title": "JavaScript",
+      "image": "js.png"
+    },
+    {
+      "title": "PHP",
+      "image": "php.png"
+    },
+    {
+      "title": "C#",
+      "image": "csharp.png"
+    },
+    {
+      "title": "MYSQL",
+      "image": "mysql.png"
+    },
+    {
+      "title": "REACTJS",
+      "image": "react.png"
+    },
+    {
+      "title": "Tailwind",
+      "image": "tailwind.png"
+    },
+    {
+      "title": "NODE",
+      "image": "node.png"
+    },
+    {
+      "title": "LARAVEL",
+      "image": "laravel.png"
+    },
+    {
+      "title": "POSTEGRESQL",
+      "image": "postegrsl.png"
+    },
+    {
+      "title": "MONGODB",
+      "image": "mongodb.png"
+    }, 
+    {
+      "title": "XD",
+      "image": "xd.png"
+    },
+    {
+      "title": "Git",
+      "image": "git.png"
+    }
+  ]
+  
