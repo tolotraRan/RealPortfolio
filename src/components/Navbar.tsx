@@ -7,11 +7,10 @@ interface NavLink {
 }
 
 const navlinks: NavLink[] = [
-  { title: 'Home', link: '/' },
-  { title: 'About', link: '/about' },
-  { title: 'Skill', link: '/skill' },
-  { title: 'Formation', link: '/formation' },
-  { title: 'Contact', link: '/contact' },
+  { title: 'Home', link: '/intro' },
+  { title: 'About', link: '/#About' },
+  { title: 'Skill', link: '/#Skills' },
+  { title: 'Contact', link: '/#Contact' },
 ];
 
 function Navbar() {
@@ -23,8 +22,10 @@ function Navbar() {
       const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 0);
     };
-
+  
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Appel initial pour définir la classe en fonction de la position de défilement actuelle
+  
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -34,12 +35,27 @@ function Navbar() {
     setOpen((prev) => !prev);
   };
 
+  const scrollToSection = (link: string) => {
+    const section = document.querySelector(link);
+    if (section && section instanceof HTMLElement) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth',
+      });
+      setOpen(false);
+    } else {
+      console.error('Section not found or is not a valid HTMLElement.');
+    }
+  };
+  
+
   return (
-    <div className={`bg-${isScrolled ? 'gray' : 'transparent'}-800 w-full z-50 transition-all duration-300 ease-in-out absolute top-0`}>
+    <div className={`fixed w-full z-50 ${isScrolled ? 'bg-gray-800' : 'bg-transparent'} transition-all duration-300 ease-in-out`}>
+
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="/"className="text-orange-600">
+            <a href="/" className="text-orange-600">
               <h1>Tolotra</h1>
             </a>
           </div>
@@ -47,9 +63,10 @@ function Navbar() {
             <div className="ml-10 flex items-baseline space-x-4">
               {navlinks.map((link, index) => (
                 <a
-                  href={link.link}
                   key={index}
+                  href={link.link}
                   className="text-gray-300 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  onClick={() => scrollToSection(link.link)}
                 >
                   {link.title}
                 </a>
@@ -68,21 +85,22 @@ function Navbar() {
           </div>
         </div>
       </div>
-      {open ? (
+      {open && (
         <div className="md:hidden">
           <div className="ox-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navlinks.map((link, index) => (
               <a
-                href={link.link}
                 key={index}
+                href={link.link}
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() => scrollToSection(link.link)}
               >
                 {link.title}
               </a>
             ))}
           </div>
         </div>
-      ) : null}
+      )}
     </div>
   );
 }

@@ -1,0 +1,25 @@
+.navbar{
+    background-color: transparent;
+}
+.navbarLi a{
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+.navbarLi a:hover,
+.navbarLi a.active
+{
+  color: #35807E;
+}
+.navbarLi a:hover::after,.navbarLi a.active::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 5px;
+    background-color: #35807E;
+}
+.ion-icon{
+    width: 32px;
+    height: 32px;
+}

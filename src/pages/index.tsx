@@ -1,42 +1,27 @@
-import type { GetStaticProps, NextPage } from "next";
-
-import Contact from "../components/Contact";
+import React from 'react';
 import Cursor from "../components/Cursor";
-import { GET_ALL_DATA } from "../graphql/queries";
+import Navbar from "../components/Navbar";
 import Intro from "../components/Intro";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
-import MainProjects from "../components/MainProjects";
-import Skills from "../components/Skills";
-import SmallProjects from "../components/SmallProjects";
 import Who from "../components/Who";
+import Skills from "../components/Skills";
+import MainProjects from "../components/MainProjects";
+import SmallProjects from "../components/SmallProjects";
+import Contact from "../components/Contact";
+import { GET_ALL_DATA } from "../graphql/queries";
 import { allDataType } from "../shared/types";
 import { client } from "../graphql/client";
-import { useRef } from "react";
-import Navbar from "../components/Navbar";
+import { GetStaticProps, NextPage } from "next";
 
 interface HomeProps {
   data: allDataType;
 }
 
 const Home: NextPage<HomeProps> = ({ data }) => {
-  const containerRef = useRef(null);
-
   return (
-    <LocomotiveScrollProvider
-      options={{
-        smooth: true,
-        tablet: {
-          smooth: true,
-          breakpoint: 768,
-        },
-      }}
-      watch={[]}
-      containerRef={containerRef}
-    >
+    <>
       <Cursor />
-
-      <div data-scroll-container ref={containerRef}>
-        <Navbar />
+      <Navbar />
+      <div>
         <Intro />
         <Who />
         <Skills skills={data.skills} />
@@ -44,7 +29,7 @@ const Home: NextPage<HomeProps> = ({ data }) => {
         <SmallProjects projects={data.smallProjects} />
         <Contact />
       </div>
-    </LocomotiveScrollProvider>
+    </>
   );
 };
 

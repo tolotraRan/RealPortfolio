@@ -4,6 +4,14 @@
       "image": "html.png"
     },
     {
+      "title": "XD",
+      "image": "xd.png"
+    },
+    {
+      "title": "Git",
+      "image": "git.png"
+    },
+    {
       "title": "CSS",
       "image": "css.png"
     },
@@ -28,17 +36,26 @@
       "image": "react.png"
     },
     {
-      "title": "Tailwind",
-      "image": "tailwind.png"
-    },
-    {
       "title": "NODE",
       "image": "node.png"
+    },
+    {
+      "title": "Express",
+      "image": "express.png"
     },
     {
       "title": "LARAVEL",
       "image": "laravel.png"
     },
+    {
+      "title": "Tailwind",
+      "image": "tailwind.png"
+    },
+    {
+      "title": "Bootstrap",
+      "image": "bootstrap.png"
+    },
+    
     {
       "title": "POSTEGRESQL",
       "image": "postegrsl.png"
@@ -46,14 +63,6 @@
     {
       "title": "MONGODB",
       "image": "mongodb.png"
-    }, 
-    {
-      "title": "XD",
-      "image": "xd.png"
-    },
-    {
-      "title": "Git",
-      "image": "git.png"
     }
   ]
   

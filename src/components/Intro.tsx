@@ -13,7 +13,7 @@ const Intro: FC = () => {
     loop: 0
   })
   return (
-    <div className="relative h-screen flex justify-center items-center flex-col gap-5">
+    <div id="#intro" className="relative h-screen flex justify-center items-center flex-col gap-5">
       <Canvas />
 
       <div className="text font-bold text-4xl md:text-6xl sm:text-5xl ">

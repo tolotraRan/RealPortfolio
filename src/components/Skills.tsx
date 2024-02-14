@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import skillsData from "../shared/skillsData.json";
 import Image from 'next/image';
 
@@ -16,10 +16,10 @@ const Skills: FC<SkillsProps> = ({ skills }) => {
   const languages = skills.filter(skill => ["HTML", "CSS", "JavaScript", "PHP", "C#"].includes(skill.title));
   const frameworks = skills.filter(skill => ["REACTJS", "Tailwind","Bootstrap", "NODE", "Express","LARAVEL"].includes(skill.title));
   const databases = skills.filter(skill => ["MYSQL", "POSTEGRESQL", "MONGODB"].includes(skill.title));
-  const others = skills.filter(skill => !["XD", "Git"].includes(skill.title));
+  const others = skills.filter(skill => !["HTML", "CSS", "JavaScript", "PHP", "C#", "REACTJS", "Tailwind", "Bootstrap", "NODE", "Express","LARAVEL", "MYSQL", "POSTEGRESQL", "MONGODB"].includes(skill.title));
 
   return (
-    <div id="Skills" className="h-screen border-cyan-100 mb-56">
+    <div id="Skills" className="min-h-screen border-cyan-100 mb-56">
       <div className="lg:min-h-[70vh] px-[5vw] py-[80px] flex flex-col items-center justify-center z-[4]">
         <h1
           data-scroll
@@ -37,7 +37,7 @@ const Skills: FC<SkillsProps> = ({ skills }) => {
         >
           Technologies and languages that I use to make my product everyday
         </p>
-        <div className="grid grid-cols-4 gap-10 ml-32">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 ml-8"> {/* Utilisation de la classe sm:grid-cols-4 pour spécifier que sur les écrans de taille mobile, il y aura 2 colonnes, et sur les écrans plus larges, il y aura 4 colonnes */}
           <div className="col-span-1">
             <div className="grid grid-cols-2 gap-y-4">
               <h2 className="text-xl font-bold mb-4 col-span-2">Languages</h2>
