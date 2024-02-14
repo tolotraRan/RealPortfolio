@@ -5,7 +5,6 @@ import Intro from "../components/Intro";
 import Who from "../components/Who";
 import Skills from "../components/Skills";
 import MainProjects from "../components/MainProjects";
-import SmallProjects from "../components/SmallProjects";
 import Contact from "../components/Contact";
 import { GET_ALL_DATA } from "../graphql/queries";
 import { allDataType } from "../shared/types";
@@ -26,7 +25,6 @@ const Home: NextPage<HomeProps> = ({ data }) => {
         <Who />
         <Skills skills={data.skills} />
         <MainProjects projects={data.projects} />
-        <SmallProjects projects={data.smallProjects} />
         <Contact />
       </div>
     </>
