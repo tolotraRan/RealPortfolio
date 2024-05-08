@@ -19,7 +19,7 @@ const Contact: FC = () => {
               method="POST"
               className="flex flex-col gap-2"
             >
-              <label htmlFor="name">Your name</label>
+              <label htmlFor="name">name</label>
               <input
                 type="text"
                 id="name"
