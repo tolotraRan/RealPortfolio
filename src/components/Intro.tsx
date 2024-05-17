@@ -4,7 +4,6 @@ import { BiChevronsDown } from "react-icons/bi";
 import Canvas from "./Canvas";
 import { characters } from "../shared/contants";
 import { m } from "framer-motion";
-import Bouton from "./bouton";
 
 const Intro: FC = () => {
   const transition = { duration: 2, type: "spring" };
